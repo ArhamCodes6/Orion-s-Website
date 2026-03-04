@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Code2, Sparkles, Mail, Github, Linkedin, Twitter, ArrowRight, Zap, Layers, Palette } from 'lucide-react';
+import { Code2, Sparkles, Mail, ArrowRight, Zap, Layers, Palette } from 'lucide-react';
+import { FaLinkedin, FaGithub, FaInstagram, FaYoutube} from 'react-icons/fa';
 import { Card, CardContent } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 import '../styles/Home.css';
@@ -54,6 +55,11 @@ const Home = () => {
       role: 'Developer',
       image: 'images/arham.jpeg',
       description: 'I haven\'t seen sunlight in years.',
+      social: {
+          linkedin: 'https://www.linkedin.com/in/qazi-arham-sarwar-72a85336a/',
+          instagram :  "https://www.instagram.com/ig_arham_/",
+          github: "https://github.com/ArhamCodes6"
+      }
     },
     {
       id: 2,
@@ -61,6 +67,11 @@ const Home = () => {
       role: 'Documentation and Designer',
       image: 'https://via.placeholder.com/400x400/1a1a1a/00d4ff?text=Member+2',
       description: '⭐⭐⭐⭐⭐ runs great on my setup, super duper vanilla is right.',
+      social: {
+          linkedin: 'https://www.linkedin.com/in/vmccaballero/',
+          instagram :  "https://instagram.com/beansebrrr",
+          github: "https://github.com/beansebrrr"
+      }
     },
     {
       id: 3,
@@ -68,6 +79,11 @@ const Home = () => {
       role: 'Project Manager',
       image: 'images/brent.png',
       description: 'Busy isn\'t busy enough.',
+      social: {
+        linkedin: 'https://www.linkedin.com/in/brent-feir-4473ab288/',
+        instagram :  "https://www.instagram.com/anton.neo_/",
+        github: "https://github.com/KazuyoGH"
+      }
     },
     {
       id: 4,
@@ -75,6 +91,11 @@ const Home = () => {
       role: 'Developer and Designer',
       image: 'images/vince.png',
       description: 'Drink more water..',
+      social: {
+          linkedin: 'https://www.linkedin.com/in/vmccaballero/',
+          instagram :  "https://instagram.com/beansebrrr",
+          github: "https://github.com/beansebrrr"
+      }
     },
     {
       id: 5,
@@ -82,6 +103,11 @@ const Home = () => {
       role: 'Developer, Designer, and Documentation',
       image: '/images/the run away criminal.png',
       description: 'Shader developer and web developer in training. 80% water.',
+      social: {
+          linkedin: '',
+          instagram :  "",
+          github: "https://github.com/Eldeston"
+      }
     },
     {
       id: 6,
@@ -89,6 +115,11 @@ const Home = () => {
       role: 'Designer and Documentation',
       image: 'images/maud.png',
       description: 'If you code and draw and combine that, would you lose? Nah, I\'d win..',
+      social: {
+          youtube: 'https://www.youtube.com/@theanonymousmau',
+          instagram :  "https://www.instagram.com/theanonymousmau/",
+          github: "https://github.com/TheStudyingMau"
+      }
     },
   ];
 
@@ -232,15 +263,26 @@ const Home = () => {
                   <img src={member.image} alt={member.name} className="team-card-image" />
                   <div className="team-card-overlay">
                     <div className="social-links">
-                      <button className="social-link" aria-label="LinkedIn">
-                        <Linkedin size={20} />
-                      </button>
-                      <button className="social-link" aria-label="GitHub">
-                        <Github size={20} />
-                      </button>
-                      <button className="social-link" aria-label="Twitter">
-                        <Twitter size={20} />
-                      </button>
+                      {member.social.linkedin && (
+                        <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer" className="social-link">
+                          <FaLinkedin size={20} />
+                        </a>
+                      )}
+                      {member.social.github && (
+                        <a href={member.social.github} target="_blank" rel="noopener noreferrer" className="social-link">
+                          <FaGithub size={20} />
+                      </a>
+                      )}
+                      {member.social.instagram && (
+                        <a href={member.social.instagram} target="_blank" rel="noopener noreferrer" className="social-link">
+                          <FaInstagram size={20} />
+                        </a>
+                      )}
+                      {member.social.youtube && (
+                        <a href={member.social.youtube} target="_blank" rel="noopener noreferrer" className="social-link">
+                          <FaYoutube size={20} />
+                        </a>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -292,13 +334,13 @@ const Home = () => {
           </div>
           <div className="footer-social">
             <button className="footer-social-link" aria-label="GitHub">
-              <Github size={20} />
+              <FaGithub size={20} />
             </button>
             <button className="footer-social-link" aria-label="LinkedIn">
-              <Linkedin size={20} />
+              <FaLinkedin size={20} />
             </button>
-            <button className="footer-social-link" aria-label="Twitter">
-              <Twitter size={20} />
+            <button className="footer-social-link" aria-label="Instagram">
+              <FaInstagram size={20} />
             </button>
           </div>
         </div>
