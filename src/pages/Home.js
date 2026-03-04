@@ -71,24 +71,24 @@ const Home = () => {
     },
     {
       id: 4,
+      name: 'Beanse',
+      role: 'Developer and Designer',
+      image: 'images/vince.png',
+      description: 'Drink more water..',
+    },
+    {
+      id: 5,
       name: 'Eldeston',
       role: 'Developer, Designer, and Documentation',
       image: '/images/the run away criminal.png',
       description: 'Shader developer and web developer in training. 80% water.',
     },
     {
-      id: 5,
+      id: 6,
       name: 'TheAnonymousMau',
       role: 'Designer and Documentation',
       image: 'images/maud.png',
       description: 'If you code and draw and combine that, would you lose? Nah, I\'d win..',
-    },
-    {
-      id: 6,
-      name: 'Beanse',
-      role: 'Developer and Designer',
-      image: 'images/vince.png',
-      description: 'Drink more water.',
     },
   ];
 
