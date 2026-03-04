@@ -68,9 +68,9 @@ const Home = () => {
       image: 'https://via.placeholder.com/400x400/1a1a1a/00d4ff?text=Member+2',
       description: '⭐⭐⭐⭐⭐ runs great on my setup, super duper vanilla is right.',
       social: {
-          linkedin: 'https://www.linkedin.com/in/vmccaballero/',
-          instagram :  "https://instagram.com/beansebrrr",
-          github: "https://github.com/beansebrrr"
+          linkedin: "",
+          instagram :  "",
+          github: ""
       }
     },
     {
