@@ -68,3 +68,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Dependencies to be installed
+npm install react-router-dom lucide-react
+npm install tailwindcss postcss autoprefixer
+npm install @radix-ui/react-slot class-variance-authority clsx tailwind-merge
